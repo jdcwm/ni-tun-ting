@@ -1,0 +1,55 @@
+{
+  "expo": {
+    "name": "鲵吞亭",
+    "slug": "ai-tavern",
+    "version": "3.9.15",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "android": {
+      "versionCode": 326,
+      "adaptiveIcon": {
+        "backgroundColor": "#fff5f6",
+        "foregroundImage": "./assets/android-icon-foreground.png"
+      },
+      "package": "com.anonymous.aitavern",
+      "splash": {
+        "image": "./assets/splash-icon.png",
+        "backgroundColor": "#000000",
+        "resizeMode": "contain"
+      },
+      "softwareKeyboardLayoutMode": "resize",
+      "permissions": [
+        "android.permission.INTERNET"
+      ]
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.anonymous.aitavern",
+      "splash": {
+        "image": "./assets/splash-icon.png",
+        "backgroundColor": "#000000",
+        "resizeMode": "contain"
+      },
+      "infoPlist": {
+        "NSAppTransportSecurity": {
+          "NSAllowsArbitraryLoads": true,
+          "NSAllowsLocalNetworking": true
+        },
+        "ITSAppUsesNonExemptEncryption": false
+      }
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-sharing"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "fe900651-c500-4b39-9cbf-2f2fd5f1069b"
+      }
+    },
+    "owner": "jdcwm"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "extends": "expo/tsconfig.base",
+  "compilerOptions": {
+    "strict": true,
+    "jsx": "react-native",
+    "allowJs": true
+  },
+  "exclude": [
+    "temp-expo",
+    "download",
+    "node_modules",
+    "android",
+    "ios",
+    "web-build",
+    "dist",
+    "build"
+  ]
+}

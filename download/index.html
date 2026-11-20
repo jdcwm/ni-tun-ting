@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>鲵吞亭 - 下载</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+            background: linear-gradient(135deg, #fff5f7 0%, #f0f8ff 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        .container {
+            background: white;
+            border-radius: 24px;
+            padding: 40px;
+            max-width: 480px;
+            width: 100%;
+            box-shadow: 0 20px 60px rgba(255, 107, 157, 0.15);
+            text-align: center;
+        }
+        .logo {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #ff6b9d 0%, #ff8fab 100%);
+            margin: 0 auto 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 48px;
+            box-shadow: 0 8px 24px rgba(255, 107, 157, 0.3);
+        }
+        h1 {
+            font-size: 28px;
+            color: #333;
+            margin-bottom: 8px;
+            font-weight: 700;
+        }
+        .subtitle {
+            color: #ff6b9d;
+            font-size: 14px;
+            margin-bottom: 32px;
+        }
+        .version {
+            background: linear-gradient(135deg, #fff5f7 0%, #fce4ec 100%);
+            border-radius: 16px;
+            padding: 20px;
+            margin-bottom: 24px;
+        }
+        .version-label {
+            font-size: 13px;
+            color: #888;
+            margin-bottom: 6px;
+        }
+        .version-number {
+            font-size: 24px;
+            font-weight: 700;
+            color: #ff6b9d;
+        }
+        .features {
+            text-align: left;
+            margin-bottom: 28px;
+            background: #fafafa;
+            border-radius: 12px;
+            padding: 20px;
+        }
+        .features h3 {
+            font-size: 15px;
+            color: #333;
+            margin-bottom: 12px;
+            font-weight: 600;
+        }
+        .features ul {
+            list-style: none;
+        }
+        .features li {
+            font-size: 14px;
+            color: #666;
+            padding: 6px 0;
+            padding-left: 20px;
+            position: relative;
+        }
+        .features li::before {
+            content: '✦';
+            position: absolute;
+            left: 0;
+            color: #ff6b9d;
+            font-size: 12px;
+        }
+        .download-btn {
+            display: block;
+            width: 100%;
+            padding: 16px;
+            background: linear-gradient(135deg, #ff6b9d 0%, #ff8fab 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 14px;
+            font-size: 17px;
+            font-weight: 600;
+            box-shadow: 0 6px 20px rgba(255, 107, 157, 0.35);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .download-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 28px rgba(255, 107, 157, 0.4);
+        }
+        .download-btn:active {
+            transform: translateY(0);
+        }
+        .size-info {
+            margin-top: 16px;
+            font-size: 13px;
+            color: #999;
+        }
+        .footer {
+            margin-top: 28px;
+            font-size: 12px;
+            color: #bbb;
+        }
+        .badge {
+            display: inline-block;
+            background: #e8f5e9;
+            color: #4caf50;
+            padding: 4px 10px;
+            border-radius: 10px;
+            font-size: 12px;
+            font-weight: 500;
+            margin-left: 8px;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">🦈</div>
+        <h1>鲵吞亭</h1>
+        <p class="subtitle">少女开张中~</p>
+        
+        <div class="version">
+            <div class="version-label">最新版本</div>
+            <div class="version-number">v2.9.1 <span class="badge">NEW</span></div>
+        </div>
+
+        <div class="features">
+            <h3>✨ 新增功能</h3>
+            <ul>
+                <li>消息气泡下方「⋯」菜单添加收藏功能</li>
+                <li>左侧菜单新增「收藏消息」Tab页</li>
+                <li>收藏的消息可在收藏夹中集中查看</li>
+                <li>支持取消收藏和快速跳转到原对话</li>
+            </ul>
+        </div>
+
+        <a href="ni-tun-ting-v2.9.1.apk" class="download-btn">
+            📱 下载 APK 安装包
+        </a>
+        <p class="size-info">Android 版 · 约 36 MB</p>
+        
+        <div class="footer">
+            安装时如提示风险，请选择「仍要安装」
+        </div>
+    </div>
+</body>
+</html>

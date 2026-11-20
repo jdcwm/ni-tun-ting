@@ -1,0 +1,286 @@
+import { ThemeConfig, AppSettings, ChatSettings, ConversationSettings, ChatDisplaySettings, ChatFeatureSettings, ContextManagementSettings, UserProfile } from '../types';
+import { buildDefaultCustomInterface } from '../services/customInterface';
+
+export const defaultTheme: ThemeConfig = {
+  backgroundColor: '#fff5f6',
+  primaryColor: '#fff0f3',
+  secondaryColor: '#ffe4ec',
+  accentColor: '#ff6b9d',
+  textColor: '#333333',
+  subTextColor: '#888888',
+  inputBgColor: '#ffffff',
+  buttonColor: '#ff6b9d',
+  buttonTextColor: '#ffffff',
+  menuBgColor: '#fff0f3',
+  borderColor: '#ffccd5',
+  fontSize: 16,
+  statusBarSize: 24,
+  inputBorderRadius: 12,
+  inputBorderWidth: 1,
+  inputBorderColor: '#e0e0e0',
+  inputBorderStyle: 'solid',
+  inputFontSize: 14,
+  fontFamily: undefined,
+  buttonBorderRadius: 20,
+  buttonBorderWidth: 0,
+  buttonBorderColor: '#ff6b9d',
+  buttonHasShadow: false,
+  buttonGradientColor: '#ff9ec4',
+  buttonPattern: 'rounded',
+  bubbleStyle: 'default',
+  thinkingIndicator: {
+    text: '思考中',
+    dots: 3,
+    dotColor: '#ff6b9d',
+    dotSize: 8,
+    animation: 'bounce',
+    speed: 600,
+    showDots: true,
+    showText: true,
+  },
+  userBubbleColor: '#fff0f3',
+  assistantBubbleColor: '#ffe4ec',
+  userBubbleTextColor: '#333333',
+  assistantBubbleTextColor: '#333333',
+};
+
+export const darkTheme: ThemeConfig = {
+  backgroundColor: '#0d0d1a',
+  primaryColor: '#151525',
+  secondaryColor: '#1c1c30',
+  accentColor: '#ff6b9d',
+  textColor: '#e0e0e0',
+  subTextColor: '#999999',
+  inputBgColor: '#1a1a2e',
+  buttonColor: '#ff6b9d',
+  buttonTextColor: '#ffffff',
+  menuBgColor: '#151525',
+  borderColor: '#2a2a40',
+  fontSize: 16,
+  statusBarSize: 24,
+  inputBorderRadius: 12,
+  inputBorderWidth: 1,
+  inputBorderColor: '#2a2a40',
+  inputBorderStyle: 'solid',
+  inputFontSize: 14,
+  fontFamily: undefined,
+  buttonBorderRadius: 20,
+  buttonBorderWidth: 0,
+  buttonBorderColor: '#ff6b9d',
+  buttonHasShadow: false,
+  buttonGradientColor: '#ff9ec4',
+  buttonPattern: 'rounded',
+  bubbleStyle: 'default',
+  thinkingIndicator: {
+    text: '思考中',
+    dots: 3,
+    dotColor: '#ff6b9d',
+    dotSize: 8,
+    animation: 'bounce',
+    speed: 600,
+    showDots: true,
+    showText: true,
+  },
+  userBubbleColor: '#2a2a40',
+  assistantBubbleColor: '#1c1c30',
+  userBubbleTextColor: '#e0e0e0',
+  assistantBubbleTextColor: '#e0e0e0',
+};
+
+// 黑岩射手风格主题 - 深色冷酷风格
+export const blackRockShooterTheme: ThemeConfig = {
+  backgroundColor: '#0d0d15',
+  primaryColor: '#151520',
+  secondaryColor: '#1c1c28',
+  accentColor: '#00d4ff',
+  textColor: '#e8e8f0',
+  subTextColor: '#7a7a8a',
+  inputBgColor: '#1a1a24',
+  buttonColor: '#00d4ff',
+  buttonTextColor: '#0d0d15',
+  menuBgColor: '#12121a',
+  borderColor: '#2a2a38',
+  fontSize: 16,
+  statusBarSize: 24,
+};
+
+// 黑岩射手风格主题 - 粉色警告版本
+export const blackRockShooterPinkTheme: ThemeConfig = {
+  backgroundColor: '#1a0a12',
+  primaryColor: '#2a1520',
+  secondaryColor: '#351a28',
+  accentColor: '#ff4080',
+  textColor: '#f0e8ec',
+  subTextColor: '#8a6a78',
+  inputBgColor: '#22121a',
+  buttonColor: '#ff4080',
+  buttonTextColor: '#ffffff',
+  menuBgColor: '#1e0e16',
+  borderColor: '#3a2030',
+  fontSize: 16,
+  statusBarSize: 24,
+};
+
+// 黑岩射手风格主题 - 星空版本
+export const blackRockShooterStarTheme: ThemeConfig = {
+  backgroundColor: '#0a0a1a',
+  primaryColor: '#12122a',
+  secondaryColor: '#181838',
+  accentColor: '#6080ff',
+  textColor: '#e0e0f5',
+  subTextColor: '#707090',
+  inputBgColor: '#151528',
+  buttonColor: '#6080ff',
+  buttonTextColor: '#ffffff',
+  menuBgColor: '#101020',
+  borderColor: '#252545',
+  fontSize: 16,
+  statusBarSize: 24,
+};
+
+// 预设主题列表
+export const presetThemes: { id: string; name: string; theme: ThemeConfig }[] = [
+  { id: 'default-light', name: '日间默认', theme: defaultTheme },
+  { id: 'default-dark', name: '夜间默认', theme: darkTheme },
+  { id: 'brs-cyan', name: '黑岩·青', theme: blackRockShooterTheme },
+  { id: 'brs-pink', name: '黑岩·粉', theme: blackRockShooterPinkTheme },
+  { id: 'brs-star', name: '黑岩·星', theme: blackRockShooterStarTheme },
+];
+
+export const defaultChatSettings: ChatSettings = {
+  memoryLength: 20,
+  autoSummarize: false,
+  autoSummarizeThreshold: 10,
+  streamOutput: true,
+  maxImagesPerMessage: 3,
+  sendImagesInContext: true,
+  imageHistoryCount: 10,
+  systemPrompt: '',
+  userPersona: '',
+  prePrompt: '',
+  postPrompt: '',
+  userPrePrompt: '',
+  userPostPrompt: '',
+  summaryPrompt: '请总结以上对话的要点。',
+  imageGenerationPrompt: '',
+  autoImageGeneration: false,
+  summaryRestartChance: 0,
+  pasteLongTextAsFile: false,
+  regexRules: [],
+  customCSS: '',
+  globalCSS: '',
+  cssEntries: [],
+  blockWords: [],
+  suggestedQuestionsEnabled: true,
+  greeting: '',
+  greetingEnabled: false,
+  statusBar: {
+    enabled: false,
+    vars: [],
+    position: 'top',
+    style: 'bar',
+    animation: 'none',
+  },
+  predictionConfig: {
+    // 默认关闭「一句回多条」：之前默认 enabled+maxMessages:3，导致跟谁说话都连发 3 条。
+    // 想要的话在右菜单里自己开，并设上限；开着时 AI 也能用 <<MORE>> 自己决定要不要接着说。
+    enabled: false,
+    mode: 'per_turn' as const,
+    maxMessages: 2,
+    prompt: '',
+  },
+};
+
+export const defaultConversationSettings: ConversationSettings = {
+  userAvatar: undefined,
+  userName: '玩家',
+  userId: undefined,
+  defaultAssistantAvatar: undefined,
+  defaultSystemPrompt: '',
+  contextMessageLimit: 0,
+  temperature: 0.7,
+  topP: 0.9,
+  backgroundImage: undefined,
+  splashImage: undefined,
+  splashBackgroundColor: '#fff5f6',
+  splashResizeMode: 'contain',
+  splashAnimation: 'scale',
+  splashDuration: 900,
+  splashTitle: '鲵吞亭',
+  splashSubtitle: '少女开张中~',
+  showSplashTitle: true,
+  splashImageSize: 200,
+  splashImageOffsetX: 0,
+  splashImageOffsetY: 0,
+  streamOutput: true,
+};
+
+export const defaultUserProfile: UserProfile = {
+  userId: '',
+  username: '玩家',
+  avatar: undefined,
+  numberId: undefined,
+  isOnline: false,
+  createdAt: Date.now(),
+};
+
+export const defaultChatDisplaySettings: ChatDisplaySettings = {
+  displayMode: 'bubble',
+  showAvatar: true,
+  showMessageWordCount: false,
+  showTokenUsage: false,
+  showModelName: false,
+  showTimestamp: false,
+  showFirstTokenTime: false,
+  messageDensity: 1,
+  bubbleStyle: 'default',
+};
+
+export const defaultChatFeatureSettings: ChatFeatureSettings = {
+  autoCollapseCodeBlocks: false,
+  autoGenerateChatTitle: true,
+  spellCheck: false,
+  markdownRendering: true,
+  latexRendering: false,
+  mermaidRendering: true,
+  injectDefaultMetadata: true,
+  autoRenderArtifacts: true,
+  pasteLongTextAsFile: false,
+};
+
+export const defaultContextManagementSettings: ContextManagementSettings = {
+  autoCompress: false,
+  compressThreshold: 4000,
+};
+
+export const defaultAppSettings: AppSettings = {
+  userProfile: defaultUserProfile,
+  theme: defaultTheme,
+  isDarkMode: false,
+  baseSystemPrompt: '你是一个 helpful 的AI助手。',
+  unifiedPrePrompt: '',
+  quickCommands: [
+    { id: '1', name: '继续', content: '请继续', order: 0 },
+    { id: '2', name: '翻译', content: '请翻译成中文：', order: 1 },
+    { id: '3', name: '解释', content: '请解释一下：', order: 2 },
+    { id: '4', name: '总结', content: '请总结以上内容', order: 3 },
+    { id: '5', name: '查看状态', content: '请用自然语言显示当前所有状态变量的值，并在必要时使用 {{getvar::变量名}} 读取。', order: 4 },
+    { id: '6', name: '状态指令', content: '请告诉我当前可以使用哪些状态变量，以及可用语法：{{setvar::变量::值}}、{{addvar::变量::数值}}、{{incvar::变量}}、{{decvar::变量}}、{{getvar::变量}}。', order: 5 },
+    { id: '7', name: '受伤-10', content: '角色受到10点伤害，请推进剧情，并在回复末尾用 ```status\n{{addvar::hp::-10}}\n``` 更新生命值。', order: 6 },
+    { id: '8', name: '休息恢复', content: '角色开始休息，请推进剧情，并在回复末尾用 ```status\n{{addvar::hp::10}}\n{{addvar::stamina::15}}\n``` 更新状态。', order: 7 },
+  ],
+  webSearchEnabled: false,
+  webSearchProvider: 'tavily',
+  webSearchApiKey: '',
+  webSearchMaxResults: 5,
+  conversation: defaultConversationSettings,
+  display: defaultChatDisplaySettings,
+  features: defaultChatFeatureSettings,
+  contextManagement: defaultContextManagementSettings,
+  swipeGesturesEnabled: true,
+  customInterface: buildDefaultCustomInterface(),
+};
+
+export const generateId = (): string => {
+  return Date.now().toString(36) + Math.random().toString(36).substr(2);
+};

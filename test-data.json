@@ -1,0 +1,383 @@
+{
+  "version": 1,
+  "exportTime": 1700000000000,
+  "chats": [
+  {
+    "id": "test-chat-1",
+    "title": "功能测试 - 文本对话与思考",
+    "messages": [
+      {
+        "id": "msg-1-1",
+        "role": "user",
+        "content": "你好，请介绍一下你自己",
+        "images": [],
+        "timestamp": 1700000000000,
+        "type": "text"
+      },
+      {
+        "id": "msg-1-2",
+        "role": "assistant",
+        "content": "<think>用户要求自我介绍，我需要简要说明自己的功能和特点。</think>\n你好！我是一个AI助手，可以帮助你进行文字对话、图片生成、图像识别等多种任务。我支持流式输出和思考过程展示，让你能更好地理解我的回复过程。",
+        "images": [],
+        "timestamp": 1700000060000,
+        "type": "text"
+      },
+      {
+        "id": "msg-1-3",
+        "role": "user",
+        "content": "你能做什么？",
+        "images": [],
+        "timestamp": 1700000120000,
+        "type": "text"
+      },
+      {
+        "id": "msg-1-4",
+        "role": "assistant",
+        "content": "<think>用户询问我的能力范围，我应该列出主要功能。</think>\n我可以做以下事情：\n\n1. **文字对话** - 回答问题、聊天、写故事\n2. **图片生成** - 根据文字描述生成图片\n3. **图像识别** - 分析和理解图片内容\n4. **对话总结** - 自动总结长对话的要点\n5. **思考过程** - 展示我的推理过程\n6. **世界书** - 根据关键词触发预设内容\n7. **状态栏** - 在RPG场景中追踪角色状态\n\n你可以通过设置中的不同标签页来切换不同功能的AI供应商。",
+        "images": [],
+        "timestamp": 1700000180000,
+        "type": "text",
+        "isFavorite": true
+      },
+      {
+        "id": "msg-1-5",
+        "role": "user",
+        "content": "用markdown格式写一个简单的表格",
+        "images": [],
+        "timestamp": 1700000240000,
+        "type": "text"
+      },
+      {
+        "id": "msg-1-6",
+        "role": "assistant",
+        "content": "| 功能 | 描述 | 状态 |\n|------|------|------|\n| 文本对话 | 多轮对话、流式输出 | ✅ |\n| 图片生成 | 文字转图片 | ✅ |\n| 图像识别 | 图片内容分析 | ✅ |\n| 对话总结 | 自动摘要 | ✅ |\n| 思考过程 | `<think>`标签解析 | ✅ |\n| 世界书 | 关键词触发 | ✅ |\n| 状态栏 | RPG状态追踪 | ✅ |",
+        "images": [],
+        "timestamp": 1700000300000,
+        "type": "text"
+      }
+    ],
+    "createdAt": 1700000000000,
+    "updatedAt": 1700000300000,
+    "worldBookIds": [],
+    "settings": {
+      "memoryLength": 20,
+      "autoSummarize": false,
+      "streamOutput": true,
+      "maxImagesPerMessage": 3,
+      "sendImagesInContext": true,
+      "imageHistoryCount": 5,
+      "systemPrompt": "你是一个友好的AI助手，请用中文回答。",
+      "summaryPrompt": "请总结以上对话的要点。",
+      "imageGenerationPrompt": "",
+      "autoImageGeneration": false
+    },
+    "isPinned": true
+  },
+  {
+    "id": "test-chat-2",
+    "title": "功能测试 - 图片生成",
+    "messages": [
+      {
+        "id": "msg-2-1",
+        "role": "user",
+        "content": "画一只可爱的猫咪",
+        "images": [],
+        "timestamp": 1700100000000,
+        "type": "image"
+      },
+      {
+        "id": "msg-2-2",
+        "role": "assistant",
+        "content": "画一只可爱的猫咪",
+        "images": ["https://via.placeholder.com/512x512.png?text=Cute+Cat"],
+        "timestamp": 1700100060000,
+        "type": "image"
+      },
+      {
+        "id": "msg-2-3",
+        "role": "user",
+        "content": "画一个日落场景",
+        "images": [],
+        "timestamp": 1700100120000,
+        "type": "image"
+      },
+      {
+        "id": "msg-2-4",
+        "role": "assistant",
+        "content": "画一个日落场景",
+        "images": ["https://via.placeholder.com/512x512.png?text=Sunset"],
+        "timestamp": 1700100180000,
+        "type": "image"
+      },
+      {
+        "id": "msg-2-5",
+        "role": "user",
+        "content": "再画一个赛博朋克城市夜景",
+        "images": [],
+        "timestamp": 1700100240000,
+        "type": "image"
+      },
+      {
+        "id": "msg-2-6",
+        "role": "assistant",
+        "content": "再画一个赛博朋克城市夜景",
+        "images": ["https://via.placeholder.com/512x512.png?text=Cyberpunk"],
+        "timestamp": 1700100300000,
+        "type": "image"
+      },
+      {
+        "id": "msg-2-7",
+        "role": "user",
+        "content": "画一只可爱的小狗和一只小猫在一起",
+        "images": [],
+        "timestamp": 1700100360000,
+        "type": "image"
+      },
+      {
+        "id": "msg-2-8",
+        "role": "assistant",
+        "content": "画一只可爱的小狗和一只小猫在一起",
+        "images": ["https://via.placeholder.com/512x512.png?text=Cat+And+Dog"],
+        "timestamp": 1700100420000,
+        "type": "image"
+      },
+      {
+        "id": "msg-2-9",
+        "role": "user",
+        "content": "画一幅水彩风格的山水画",
+        "images": [],
+        "timestamp": 1700100480000,
+        "type": "image"
+      },
+      {
+        "id": "msg-2-10",
+        "role": "assistant",
+        "content": "画一幅水彩风格的山水画",
+        "images": ["https://via.placeholder.com/512x512.png?text=Landscape"],
+        "timestamp": 1700100540000,
+        "type": "image",
+        "isFavorite": true
+      }
+    ],
+    "createdAt": 1700100000000,
+    "updatedAt": 1700100540000,
+    "worldBookIds": [],
+    "settings": {
+      "memoryLength": 20,
+      "autoSummarize": false,
+      "streamOutput": true,
+      "maxImagesPerMessage": 3,
+      "sendImagesInContext": true,
+      "imageHistoryCount": 5,
+      "systemPrompt": "",
+      "summaryPrompt": "请总结以上对话的要点。",
+      "imageGenerationPrompt": "高质量，细节丰富，",
+      "autoImageGeneration": false
+    }
+  },
+  {
+    "id": "test-chat-3",
+    "title": "功能测试 - RPG角色扮演与状态栏",
+    "messages": [
+      {
+        "id": "msg-3-1",
+        "role": "system",
+        "content": "你是一个RPG游戏的GM（游戏主持人）。玩家扮演一名冒险者。请用第二人称描述场景和互动。在回复末尾使用 ```status\n{{setvar::hp::100}}\n{{setvar::mp::50}}\n{{setvar::gold::10}}\n``` 格式更新状态。",
+        "images": [],
+        "timestamp": 1700200000000
+      },
+      {
+        "id": "msg-3-2",
+        "role": "user",
+        "content": "我开始冒险，走进了一个神秘的森林",
+        "images": [],
+        "timestamp": 1700200060000,
+        "type": "text"
+      },
+      {
+        "id": "msg-3-3",
+        "role": "assistant",
+        "content": "<think>玩家进入森林，我需要描述场景并设置初始状态。</think>\n你踏入了幽暗的森林，四周古木参天，阳光透过茂密的树叶洒下斑驳的光影。空气中弥漫着泥土和青苔的气息。远处传来鸟鸣声，偶尔还能听到树叶沙沙作响。\n\n你注意到地上有一些奇怪的脚印，似乎通向森林深处。\n\n```status\n{{setvar::hp::100}}\n{{setvar::mp::50}}\n{{setvar::gold::10}}\n{{setvar::location::神秘森林}}\n```",
+        "images": [],
+        "timestamp": 1700200120000,
+        "type": "text"
+      },
+      {
+        "id": "msg-3-4",
+        "role": "user",
+        "content": "我沿着脚印追踪",
+        "images": [],
+        "timestamp": 1700200180000,
+        "type": "text"
+      },
+      {
+        "id": "msg-3-5",
+        "role": "assistant",
+        "content": "<think>玩家追踪脚印，推进剧情，可能遭遇战斗。</think>\n你小心翼翼地沿着脚印前进，脚印越来越深，似乎是什么大型生物留下的。突然，前方的灌木丛剧烈晃动，一只野狼跳了出来！\n\n野狼龇牙咧嘴，眼中闪烁着凶光。它似乎把你当作了猎物。\n\n你准备好战斗了吗？\n\n```status\n{{setvar::encounter::野狼}}\n{{setvar::danger::high}}\n```",
+        "images": [],
+        "timestamp": 1700200240000,
+        "type": "text"
+      },
+      {
+        "id": "msg-3-6",
+        "role": "user",
+        "content": "我拔出剑攻击野狼",
+        "images": [],
+        "timestamp": 1700200300000,
+        "type": "text"
+      },
+      {
+        "id": "msg-3-7",
+        "role": "assistant",
+        "content": "<think>玩家发起攻击，进行战斗判定。</think>\n你果断拔出长剑，向野狼挥去！剑刃在阳光下闪过一道寒光。\n\n**命中！** 你的剑划过野狼的侧腹，野狼发出痛苦的嚎叫。但它并没有退缩，反而更加凶猛地扑向你！\n\n野狼的利爪擦过你的手臂，留下了一道浅浅的伤口。\n\n```status\n{{addvar::hp::-5}}\n{{setvar::enemy_hp::60}}\n```",
+        "images": [],
+        "timestamp": 1700200360000,
+        "type": "text",
+        "isFavorite": true
+      }
+    ],
+    "createdAt": 1700200000000,
+    "updatedAt": 1700200360000,
+    "worldBookIds": [],
+    "settings": {
+      "memoryLength": 30,
+      "autoSummarize": true,
+      "streamOutput": true,
+      "maxImagesPerMessage": 3,
+      "sendImagesInContext": true,
+      "imageHistoryCount": 5,
+      "systemPrompt": "你是一个RPG游戏的GM。玩家扮演冒险者。用第二人称描述。使用```status代码块更新状态变量。",
+      "summaryPrompt": "请总结以上RPG冒险的剧情要点，包括关键事件、角色状态变化和当前处境。",
+      "imageGenerationPrompt": "",
+      "autoImageGeneration": false,
+      "statusBar": {
+        "enabled": true,
+        "position": "bottom",
+        "style": "bar",
+        "vars": [
+          { "name": "hp", "label": "生命", "value": 95, "type": "progress", "min": 0, "max": 100 },
+          { "name": "mp", "label": "魔法", "value": 50, "type": "progress", "min": 0, "max": 100 },
+          { "name": "gold", "label": "金币", "value": 10, "type": "number" },
+          { "name": "location", "label": "位置", "value": "神秘森林", "type": "string" }
+        ]
+      }
+    },
+    "statusVars": {
+      "hp": 95,
+      "mp": 50,
+      "gold": 10,
+      "location": "神秘森林",
+      "encounter": "野狼",
+      "danger": "high",
+      "enemy_hp": 60
+    }
+  },
+  {
+    "id": "test-chat-4",
+    "title": "功能测试 - 长文本与总结",
+    "messages": [
+      {
+        "id": "msg-4-1",
+        "role": "user",
+        "content": "请详细解释什么是机器学习",
+        "images": [],
+        "timestamp": 1700300000000,
+        "type": "text"
+      },
+      {
+        "id": "msg-4-2",
+        "role": "assistant",
+        "content": "<think>用户要求详细解释机器学习，我需要从定义、类型、应用等方面全面介绍。</think>\n## 机器学习详解\n\n### 1. 定义\n机器学习是人工智能的一个分支，它使计算机系统能够通过数据自动学习和改进，而不需要显式编程。\n\n### 2. 主要类型\n\n#### 监督学习\n- 使用标注数据训练\n- 模型学习输入到输出的映射\n- 示例：图像分类、房价预测\n\n#### 无监督学习\n- 使用未标注数据\n- 发现数据中的隐藏模式\n- 示例：聚类、降维\n\n#### 强化学习\n- 通过试错学习\n- 基于奖励/惩罚机制\n- 示例：游戏AI、机器人控制\n\n### 3. 核心概念\n\n- **训练数据**：用于学习的数据集\n- **特征**：数据的可测量属性\n- **模型**：学习到的模式表示\n- **损失函数**：衡量预测误差\n- **优化算法**：最小化损失\n\n### 4. 常见算法\n\n| 算法 | 类型 | 适用场景 |\n|------|------|----------|\n| 线性回归 | 监督 | 数值预测 |\n| 决策树 | 监督 | 分类/回归 |\n| K-Means | 无监督 | 聚类 |\n| 神经网络 | 监督/强化 | 复杂模式 |\n| CNN | 监督 | 图像处理 |\n| RNN/LSTM | 监督 | 序列数据 |\n\n### 5. 应用领域\n\n1. **自然语言处理** - 机器翻译、情感分析、文本生成\n2. **计算机视觉** - 人脸识别、目标检测、自动驾驶\n3. **推荐系统** - 商品推荐、内容推荐\n4. **医疗健康** - 疾病诊断、药物发现\n5. **金融** - 风险评估、量化交易\n\n### 6. 发展趋势\n\n- **深度学习**的突破\n- **大语言模型**（如GPT系列）的兴起\n- **多模态AI**的发展\n- **边缘计算**与AI的结合",
+        "images": [],
+        "timestamp": 1700300060000,
+        "type": "text"
+      },
+      {
+        "id": "msg-4-3",
+        "role": "user",
+        "content": "请总结以上内容",
+        "images": [],
+        "timestamp": 1700300120000,
+        "type": "text"
+      },
+      {
+        "id": "msg-4-4",
+        "role": "assistant",
+        "content": "机器学习是AI的分支，通过数据自动学习。主要分为监督学习、无监督学习和强化学习三种类型。核心概念包括训练数据、特征、模型、损失函数和优化算法。常见算法有线性回归、决策树、K-Means、神经网络等。广泛应用于NLP、计算机视觉、推荐系统、医疗和金融领域。发展趋势包括深度学习、大语言模型和多模态AI。",
+        "images": [],
+        "timestamp": 1700300180000,
+        "type": "text"
+      }
+    ],
+    "createdAt": 1700300000000,
+    "updatedAt": 1700300180000,
+    "worldBookIds": [],
+    "settings": {
+      "memoryLength": 20,
+      "autoSummarize": true,
+      "streamOutput": true,
+      "maxImagesPerMessage": 3,
+      "sendImagesInContext": true,
+      "imageHistoryCount": 5,
+      "systemPrompt": "你是一个知识渊博的AI助手，擅长详细解释技术概念。",
+      "summaryPrompt": "请简洁地总结以上对话的要点，不超过3句话。",
+      "imageGenerationPrompt": "",
+      "autoImageGeneration": false
+    }
+  },
+  {
+    "id": "test-chat-5",
+    "title": "功能测试 - 代码与格式",
+    "messages": [
+      {
+        "id": "msg-5-1",
+        "role": "user",
+        "content": "写一个Python的快速排序",
+        "images": [],
+        "timestamp": 1700400000000,
+        "type": "text"
+      },
+      {
+        "id": "msg-5-2",
+        "role": "assistant",
+        "content": "<think>用户要求快速排序的Python实现，我需要写出清晰易懂的代码。</think>\n以下是Python的快速排序实现：\n\n```python\ndef quicksort(arr):\n    \"\"\"快速排序算法\"\"\"\n    if len(arr) <= 1:\n        return arr\n    \n    pivot = arr[len(arr) // 2]\n    left = [x for x in arr if x < pivot]\n    middle = [x for x in arr if x == pivot]\n    right = [x for x in arr if x > pivot]\n    \n    return quicksort(left) + middle + quicksort(right)\n\n# 使用示例\nnumbers = [3, 6, 8, 10, 1, 2, 1]\nsorted_numbers = quicksort(numbers)\nprint(f\"排序前: {numbers}\")\nprint(f\"排序后: {sorted_numbers}\")\n```\n\n**时间复杂度**：平均 O(n log n)，最坏 O(n²)\n\n**空间复杂度**：O(n)（此实现版本）",
+        "images": [],
+        "timestamp": 1700400060000,
+        "type": "text"
+      },
+      {
+        "id": "msg-5-3",
+        "role": "user",
+        "content": "写一个React组件示例",
+        "images": [],
+        "timestamp": 1700400120000,
+        "type": "text"
+      },
+      {
+        "id": "msg-5-4",
+        "role": "assistant",
+        "content": "<think>用户要求React组件示例，写一个简单的计数器组件。</think>\n```tsx\nimport React, { useState } from 'react';\nimport { View, Text, TouchableOpacity, StyleSheet } from 'react-native';\n\ninterface CounterProps {\n  initialValue?: number;\n  step?: number;\n}\n\nexport const Counter: React.FC<CounterProps> = ({ \n  initialValue = 0, \n  step = 1 \n}) => {\n  const [count, setCount] = useState(initialValue);\n\n  return (\n    <View style={styles.container}>\n      <Text style={styles.count}>{count}</Text>\n      <View style={styles.buttonRow}>\n        <TouchableOpacity \n          style={styles.button} \n          onPress={() => setCount(c => c - step)}\n        >\n          <Text style={styles.buttonText}>-</Text>\n        </TouchableOpacity>\n        <TouchableOpacity \n          style={[styles.button, styles.resetBtn]} \n          onPress={() => setCount(initialValue)}\n        >\n          <Text style={styles.buttonText}>重置</Text>\n        </TouchableOpacity>\n        <TouchableOpacity \n          style={styles.button} \n          onPress={() => setCount(c => c + step)}\n        >\n          <Text style={styles.buttonText}>+</Text>\n        </TouchableOpacity>\n      </View>\n    </View>\n  );\n};\n```\n\n这个计数器组件支持：\n- 自定义初始值 `initialValue`\n- 自定义步长 `step`\n- 增加/减少/重置按钮",
+        "images": [],
+        "timestamp": 1700400180000,
+        "type": "text",
+        "isFavorite": true
+      }
+    ],
+    "createdAt": 1700400000000,
+    "updatedAt": 1700400180000,
+    "worldBookIds": [],
+    "settings": {
+      "memoryLength": 20,
+      "autoSummarize": false,
+      "streamOutput": true,
+      "maxImagesPerMessage": 3,
+      "sendImagesInContext": true,
+      "imageHistoryCount": 5,
+      "systemPrompt": "你是一个编程专家，请提供清晰、注释完善的代码。",
+      "summaryPrompt": "请总结以上对话的要点。",
+      "imageGenerationPrompt": "",
+      "autoImageGeneration": false
+    }
+  }
+]
+}

@@ -1,0 +1,80 @@
+# Learn more https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files
+
+# dependencies
+node_modules/
+
+# Expo
+.expo/
+dist/
+web-build/
+expo-env.d.ts
+
+# Native
+.kotlin/
+*.orig.*
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+
+# Metro
+.metro-health-check*
+
+# debug
+npm-debug.*
+yarn-debug.*
+yarn-error.*
+
+# macOS
+.DS_Store
+*.pem
+
+# local env files
+.env*.local
+
+# typescript
+*.tsbuildinfo
+
+# generated native folders
+/ios
+/android
+
+# 旧的嵌套副本（自带 .git，是 v1.6.0 的 shark酒馆，不要再被父仓库打包）
+/ai-tavern/
+
+# 构建缓存与产物
+.gradle-cache/
+.gradle-home/
+.kotlin-daemon/
+.tmp/
+tmp/
+temp-expo/
+build-logs/
+/build/
+*.hbc
+
+# 大体积二进制 / 构建日志（不入库）
+*.apk
+*.zip
+*.tar.gz
+*.log
+
+# 文档快捷方式
+*.lnk
+
+# 校验脚本产出的临时转译结果
+/scripts/.compiled/
+
+# 碧蓝档案角色卡生成产物（大体积，不入库）
+/bluearchive-cards.json
+/bluearchive-cards-media.json
+# ===== 网页构建产物（121MB，不入库；需要时用 expo export --platform web 重新生成）=====
+/dist-web/
+
+# ===== 本地密钥（绝不入库）=====
+.env
+.env.*
+!.env.example
+/secrets/
+*.secret.*
